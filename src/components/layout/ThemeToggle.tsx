@@ -1,4 +1,4 @@
-import { Button } from "../../components/ui/button";
+import { Button } from "@/components/ui/button";
 import useThemeStore from "../../store/useThemeStore";
 import {
   DropdownMenu,
@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../../components/ui/dropdown-menu";
-import { IconSun, IconMoon, IconDeviceLaptop } from "@tabler/icons-react";
+import { IconSun, IconMoon } from "@tabler/icons-react";
 
 const ThemeToggle = () => {
   const { setTheme } = useThemeStore();
@@ -28,17 +28,14 @@ const ThemeToggle = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          <IconSun size={16} className="mr-2" />
+          <IconSun size={20} className="mr-2" />
           Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <IconMoon size={16} className="mr-2" />
+          <IconMoon size={20} className="mr-2" />
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          <IconDeviceLaptop size={16} className="mr-2" />
-          System
-        </DropdownMenuItem>
+       
       </DropdownMenuContent>
     </DropdownMenu>
   );
