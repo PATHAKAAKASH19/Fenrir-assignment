@@ -2,7 +2,7 @@
 
 A modern, responsive security dashboard built with React, TypeScript, and Vite. This project features a login page, a main dashboard with scan summaries, and a detailed live scan console.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v18 or higher recommended)
@@ -12,9 +12,6 @@ A modern, responsive security dashboard built with React, TypeScript, and Vite. 
 
 1. Clone the repository
 2. Navigate to the project directory:
-   ```bash
-   cd assignment
-   ```
 3. Install dependencies:
    ```bash
    npm install
@@ -26,7 +23,7 @@ A modern, responsive security dashboard built with React, TypeScript, and Vite. 
 
 The application will be available at `http://localhost:5173`.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Framework:** [React 19](https://react.dev/)
 - **Build Tool:** [Vite](https://vitejs.dev/)
@@ -37,7 +34,7 @@ The application will be available at `http://localhost:5173`.
 - **Animations:** [Three.js](https://threejs.org/) & [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
 - **Routing:** [React Router 7](https://reactrouter.com/)
 
-## ✨ Key Features
+## Key Features
 
 - **Authentication:** Sleek login page with modern UI.
 - **Security Dashboard:** Overview of critical, high, medium, and low severity vulnerabilities.
@@ -46,7 +43,7 @@ The application will be available at `http://localhost:5173`.
 - **Theme Support:** Dark and Light mode support using `ThemeProvider`.
 - **Responsive Design:** Fully optimized for mobile and desktop screens.
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -60,7 +57,7 @@ src/
 └── App.tsx         # Root component and routing logic
 ```
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 - **Mock Data:** Currently, all scan results and logs are powered by [mockData.ts](file:///home/pheonix/all-projects/my-completed-projects/fenrir-security/assignment/src/data/mockData.ts).
 - **Placeholders:** Some buttons (like "New scan" and "Column") are UI placeholders and do not have full backend functionality.
