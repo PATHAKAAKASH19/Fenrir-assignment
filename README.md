@@ -31,7 +31,6 @@ The application will be available at `http://localhost:5173`.
 - **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
 - **Icons:** [Tabler Icons](https://tabler-icons.io/)
 - **State Management:** [Zustand](https://docs.pmnd.rs/zustand/)
-- **Animations:** [Three.js](https://threejs.org/) & [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
 - **Routing:** [React Router 7](https://reactrouter.com/)
 
 ## Key Features
