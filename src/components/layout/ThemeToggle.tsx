@@ -20,7 +20,7 @@ const ThemeToggle = () => {
             size={18}
           />
           <IconMoon
-            className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+            className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 dark:text-white"
             size={18}
           />
           <span className="sr-only">Toggle theme</span>
@@ -32,7 +32,7 @@ const ThemeToggle = () => {
           Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <IconMoon size={20} className="mr-2" />
+          <IconMoon size={20} className="mr-2"/>
           Dark
         </DropdownMenuItem>
        

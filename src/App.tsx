@@ -10,11 +10,16 @@ function App() {
     <ThemeProvider>
       <Router>
         <Routes>
+     
+          <Route path="/" element={<LoginPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/" element={<DashboardPage />}>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/scans" element={<Scans />} />
+
+          <Route path="/dashboard" element={<DashboardPage />}>
+            <Route index element={<Dashboard />} />
+            <Route path="scans" element={<Scans />} />
           </Route>
+
+          
         </Routes>
       </Router>
     </ThemeProvider>

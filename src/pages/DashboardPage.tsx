@@ -38,7 +38,7 @@ export default function DashboardLayout() {
   const mainNavItems = [
     { icon: IconLayoutDashboard, label: "Dashboard", route: "dashboard" },
     { icon: IconClipboardCheck, label: "Projects", route: "dashboard" },
-    { icon: IconScan, label: "Scans", route: "scans" },
+    { icon: IconScan, label: "Scans", route: "dashboard/scans" },
     { icon: IconCalendar, label: "Schedule", route: "dashboard" },
   ];
 
@@ -86,8 +86,8 @@ export default function DashboardLayout() {
        
         <div className="flex items-center justify-between px-4 py-5">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-teal-700 dark:bg-teal-600 flex items-center justify-center border-2 border-teal-800 dark:border-teal-500">
-              <div className="w-3 h-3 rounded-full bg-white m-2 border-2"></div>
+            <div className="w-8 h-8 rounded-full bg-teal-700 dark:bg-teal-600 flex items-center justify-center border-teal-800 dark:border-teal-500">
+              <div className="w-3 h-3 rounded-full bg-white m-2 "></div>
             </div>
             <span className="font-bold text-xl tracking-tight text-teal-700 dark:text-teal-400">
               aps

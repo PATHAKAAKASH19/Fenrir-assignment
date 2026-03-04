@@ -20,7 +20,7 @@ const TealLink = ({ children }: { children: React.ReactNode }) => (
 
 const DarkBadge = ({ children }: { children: React.ReactNode }) => (
   <span className="inline-flex">
-    <span className="bg-[#1e293b] dark:bg-[#0f172a] text-white text-xs px-2 py-0.5 rounded-full font-mono border dark:border-gray-600">
+    <span className="bg-gray-700/90 dark:bg-[#0f172a] text-white text-xs px-2 py-1 rounded-full font-mono border dark:border-gray-600 flex justify-center items-center">
       {children}
     </span>
   </span>
@@ -113,14 +113,12 @@ export default function Scans() {
       }}
     >
       <div className="space-y-4 md:space-y-6 pb-16 md:pb-20">
-       
         <div className="bg-white dark:bg-gray-900 rounded-lg p-4 md:p-6 shadow-sm border border-transparent dark:border-gray-700/50">
           <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-         
             <div className="flex flex-col items-center md:items-start">
-              <div className="relative w-32 h-32 md:w-40 md:h-40">
-                <div className="absolute inset-0 rounded-full bg-[#1a2332] dark:bg-[#0d1829] w-24 h-24 md:w-30 md:h-30 top-4 left-4 md:top-5 md:left-5" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <div className="relative w-32 h-32 md:w-40 md:h-40 border-r border-gray-300 dark:border-gray-700">
+                <div className="absolute inset-0 rounded-full bg-black/80 dark:bg-gray-800 w-24 h-24 md:w-30 md:h-30 top-4 left-4 md:top-5 md:left-5 " />
+                <div className="absolute inset-0 flex flex-col items-center justify-center ">
                   <span className="font-bold text-xl md:text-2xl text-teal-500 dark:text-teal-400">
                     0%
                   </span>
@@ -131,9 +129,7 @@ export default function Scans() {
               </div>
             </div>
 
-           
             <div className="flex-1 flex flex-col justify-between">
-              
               <div className="overflow-x-auto pb-4 hide-scrollbar">
                 <div className="relative flex justify-between items-center mb-6 min-w-125 md:min-w-0">
                   <div className="absolute top-5 left-0 w-full h-0.5 bg-gray-200 dark:bg-gray-700 z-0" />
@@ -142,7 +138,6 @@ export default function Scans() {
                     style={{ width: "10%" }}
                   />
 
-                 
                   <div className="flex flex-col items-center z-10 gap-1 md:gap-2">
                     <div className="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center rounded-full bg-teal-200/50 dark:bg-teal-900/40">
                       <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-teal-500 dark:bg-teal-600 flex items-center justify-center">
@@ -154,7 +149,6 @@ export default function Scans() {
                     </span>
                   </div>
 
-                  
                   {[
                     {
                       icon: (
@@ -196,9 +190,8 @@ export default function Scans() {
                 </div>
               </div>
 
-             
               <div className="border-t border-gray-300 dark:border-gray-700 pt-4 md:pt-6">
-                <div className="grid grid-cols-2 md:flex md:gap-6 text-xs md:text-sm gap-3">
+                <div className="grid grid-cols-2 md:flex md:gap-6 text-xs md:text-sm gap-3 md:justify-between">
                   {[
                     { label: "Scan Type", value: "Grey Box", teal: false },
                     { label: "Targets", value: "google.com", teal: false },
@@ -211,7 +204,10 @@ export default function Scans() {
                     { label: "Files", value: "Control.pdf", teal: false },
                     { label: "Checklists", value: "40/350", teal: true },
                   ].map(({ label, value, teal }) => (
-                    <div key={label} className="flex flex-col gap-0.5 md:gap-1">
+                    <div
+                      key={label}
+                      className="flex flex-col gap-0.5 md:gap-1 "
+                    >
                       <span className="text-gray-400 dark:text-gray-500 font-medium text-[10px] md:text-xs">
                         {label}
                       </span>
@@ -228,9 +224,7 @@ export default function Scans() {
           </div>
         </div>
 
-      
         <div className="bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-transparent dark:border-gray-700/50">
-         
           <div className="flex items-center justify-between px-4 md:px-6 py-3 md:py-4 border-b border-gray-200 dark:border-gray-700">
             <div className="flex items-center gap-2 md:gap-3">
               <span className="relative flex h-2 w-2 md:h-3 md:w-3">
@@ -262,10 +256,8 @@ export default function Scans() {
             </div>
           </div>
 
-         
           {consoleExpanded && (
             <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-gray-700">
-           
               <div className="w-full md:w-[65%] p-3 md:p-4">
                 <div className="flex gap-3 md:gap-4 mb-3 md:mb-4 border-b border-gray-200 dark:border-gray-700 overflow-x-auto hide-scrollbar">
                   <button className="pb-1 md:pb-2 px-1 text-xs md:text-sm font-medium text-teal-600 dark:text-teal-400 border-b-2 border-teal-600 dark:border-teal-400 whitespace-nowrap">
@@ -298,7 +290,6 @@ export default function Scans() {
                 </div>
               </div>
 
-             
               <div className="w-full md:w-[35%] p-3 md:p-4">
                 <h3 className="text-xs md:text-sm font-bold text-gray-900 dark:text-white mb-2 md:mb-3">
                   Finding Log
@@ -337,7 +328,6 @@ export default function Scans() {
         </div>
       </div>
 
-      
       <div className="fixed bottom-0 left-0 right-0 lg:left-70 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-3 md:px-6 py-2 z-40">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto">
           <div className="flex items-center gap-3 md:gap-6 text-[10px] md:text-sm">
